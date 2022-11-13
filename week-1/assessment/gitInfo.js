@@ -1,0 +1,107 @@
+/*
+    For this section of the assessment you will be putting together a cheat sheet for common 
+    git commands.  You'll provide the command as well as what it does. 
+*/
+
+//////////////////PROBLEM 1////////////////////
+/*
+    Create a variable called 'gitDefinition'.
+    It should be a string containing your best definition of what Git is.
+*/
+
+//CODE HERE
+const gitDefinition = `
+Git is a version control system that allows individuals and teams to track changes in an organized
+fashion. It provides a common set of commands to save files locally and remotely and push them to
+an external site like github.
+`;
+
+//////////////////PROBLEM 2////////////////////
+/*
+    Create a variable called 'gitHubDefinition'.  
+    It should be a string containing your best definition of what GitHub is.
+*/
+
+//CODE HERE
+const gitHubDefinition = `
+GitHub is a site that allows developers to upload their code. It essentially a cloud storage service
+for developers.
+`;
+
+//////////////////PROBLEM 3////////////////////
+/*
+    Create a variable called 'gitInitDefinition'.  
+    It should be a string containing your best definition of what 'git init' does.
+*/
+
+//CODE HERE
+const gitInitDefinition = `
+The command git init initializes a local git repository. This means that changes to files will be tracked.
+`;
+
+//////////////////PROBLEM 4////////////////////
+/*
+    Create a variable called 'gitCloneDefinition'.  
+    It should be a string containing your best definition of what 'git clone' does.
+*/
+
+//CODE HERE
+const gitCloneDefinition = `
+The command git clone will make a copy of a repository.
+`;
+
+//////////////////PROBLEM 5////////////////////
+/*
+    Create a variable called 'gitStatusDefinition'.  
+    It should be a string containing your best definition of what 'git status' does.
+*/
+
+//CODE HERE
+const gitStatusDefinition = `
+The command git status displays the state of the working directory. It shows the status of files whether
+they're staged or tracked.
+`;
+
+//////////////////PROBLEM 6////////////////////
+/*
+    Create a variable called 'gitAddDefinition'.  
+    It should be a string containing your best definition of what 'git add' does.
+
+    Create another variable called 'gitAddCode'.  
+    It should be a string containing the code to add all files.
+*/
+
+//CODE HERE
+const gitAddDefinition = `
+The command git add will move files to staging where they are then ready to be committed.
+`;
+
+const gitAddCode = 'git add .';
+
+//////////////////PROBLEM 7////////////////////
+/*
+    Create a variable called 'gitCommitDefinition'.  
+    It should be a string containing your best definition of what 'git commit' does.
+
+    Create a variable called 'gitCommitCode'.  
+    It should be a string containing the code to commit using the message "initial commit".
+*/
+
+//CODE HERE
+const gitCommitDefinition = `
+The command git commit takes files from staging and 'commits' them to the local repo. The repo will
+now show the committed file as part of the repo commit history.
+`;
+
+const gitCommitCode = `git commit -m 'initial commit'`;
+
+//////////////////PROBLEM 8////////////////////
+/*
+    Create a variable called 'gitPushDefinition'.  
+    It should be a string containing your best definition of what 'git push' does.
+*/
+
+//CODE HERE
+const gitPushDefinition = `
+The command git push takes the changes made to the local repo and uploads them to a remote repo.
+`;
