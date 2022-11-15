@@ -11,7 +11,7 @@ function hasMoreVowels(word) {
   }
 
   console.log(vCount, word.length, vCount > word.length - vCount);
-  return vCount > word.length - vCount ? true : false;
+  return vCount > word.length - vCount;
 }
 
 hasMoreVowels('mice');
