@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.header {
+  background-color: rgb(208, 209, 209);
+  height: 4em;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  background-color: rgb(95, 95, 248);
+  height: 45px;
+  width: 45px;
+  margin-left: 10px;
+}
+
+.para {
+  margin: 60px 20px;
+}
+
+.blue,
+.aqua,
+.green,
+.yellow {
+  height: 200px;
+}
+
+.blue {
+  background-color: rgba(51, 153, 200, 0.691);
+}
+
+.aqua {
+  background-color: rgb(97, 199, 169);
+}
+
+.green {
+  background-color: rgb(165, 222, 165);
+}
+
+.yellow {
+  background-color: rgb(232, 240, 77);
+}
