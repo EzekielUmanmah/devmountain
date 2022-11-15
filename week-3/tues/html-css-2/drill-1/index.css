@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+header {
+  height: 6em;
+  background-color: rgb(58, 59, 60);
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 9em);
+}
+
+article {
+  width: 80%;
+  height: 100%;
+  display: inline-block;
+}
+
+aside {
+  background-color: darkgray;
+  width: 10%;
+  height: 109%;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+footer {
+  height: 3.1em;
+  background-color: rgb(24, 24, 25);
+  width: 80%;
+  margin: 0 auto;
+}
