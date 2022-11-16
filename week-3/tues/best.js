@@ -8,9 +8,8 @@
 // 12
 
 function best(data) {
-  let maxProfit = 0,
-    buy,
-    sell;
+  let maxProfit = 0;
+  buy, sell;
 
   for (let i = 0; i < data.length; i++) {
     const arr = data.slice(i + 1);
