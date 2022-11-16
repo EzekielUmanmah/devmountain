@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+*, h1, h3, h4, a {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background-color: #232323;
+    color: white;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    background-color: #404040;
+    color: rgb(238, 238, 64);
+    height: 70px;
+    font-size: 25px;
+    padding-left: 30px;
+    position: sticky;
+    top: 70px;
+    border-bottom: 2px solid yellow;
+}
+
+h3 {
+    font-size: 20px;
+    color: #404040;
+}
+
+h4 { 
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 25px;
+}
+
+footer {
+    height: 200px;
+    padding-left: 50px;
+    background-color: yellow;
+}
+
+a {
+    padding: 10px;
+    text-decoration: none;
+    color: #232323;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+button {
+    background-color: yellow;
+    color: #404040; 
+    border: 2px solid white;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #232323;
+    color: yellow;
+    transform: scale(1.1);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.white-text {
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.header {
+    justify-content: space-between;
+    padding: 30px;
+    color: rgb(238, 238, 64);
+    background-color: #404040;
+}
+
+.top-nav {
+    justify-content: center;
+    height: 70px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: yellow;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+.form-section {
+    scroll-margin-top: 70px;
+}
+
+.form-input {
+    padding-left: 30px;
+}
+
+.top-input {
+    margin-top: 25px;
+}
+
+.triangle {
+    margin-bottom: 3px;
+    color: rgb(238, 238, 64);
+}
+
+.bottom-nav {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bottom-nav > a {
+    padding: 5px;
+    color: #404040;
+}
+
+.header-buttons {
+    width: 175px;
+    justify-content: space-between;
+}
+
+.footer-links {
+    height: 150px;
+    border-left: 2px solid #232323;
+    margin: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 30px;
+    color: #404040;
+}
+
+#back-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #404040;
+    border: 2px solid rgb(238, 238, 64);
+}
+
+#reg {
+    margin: 30px;
+}

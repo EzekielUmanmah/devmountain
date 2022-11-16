@@ -1,0 +1,112 @@
+/* 
+- the font is the default sans-serif font-family
+- the darker color is the css default "teal"
+- the lighter color is the css default "yellowgreen"
+- the top shadow is the css default "lightgray"
+- the bottom shadow is rgb(0, 75, 75)
+- the only other colors are black and white
+- use this background size and image to get the dotted background on the top half 
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle, yellowgreen 1px, rgba(0, 0, 0, 0) 1px); 
+*/
+
+
+*, h1, a, p {
+    font-family: sans-serif;
+}
+
+header {
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 0 20px lightgray;
+}
+
+h1 {
+    font-size: 26px;
+    color: teal;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: teal;
+    margin: 0 15px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.hero {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle, yellowgreen 1px, rgba(0, 0, 0, 0) 1px);
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: teal;
+    padding: 45px 60px;
+}
+
+.location {
+    height: calc(100vh - 565px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: teal;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 30px;
+    color: white;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: yellowgreen;
+}
+
+img {
+    width: 200px;
+}
+
+footer {
+    background-color: teal;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 0 20px rgb(0, 75, 75);
+}

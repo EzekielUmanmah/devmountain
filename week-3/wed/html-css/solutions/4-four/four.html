@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="four.css">
+</head>
+<body id="top">
+    <header class="header flex">
+        <h1 class="bold" id="logo">Lemon Drop</h1>
+
+        <section class="header-buttons flex">
+            <button>Register</button>
+            <button>Login</button>
+        </section>
+    </header>
+
+    <nav class="top-nav flex">
+        <a href="#personal-info">Personal</a>
+        <a href="#billing-info">Billing</a>
+        <a href="#shipping-info">Shipping</a>
+        <a href="#preferences">Preferences</a>
+    </nav>
+
+    <main>
+        <section id="personal-info" class="form-section">
+            <h2 class="flex bold white-text">Personal Information</h2>
+            <div class="form-input top-input">
+                <label for="first-name">First Name:</label>
+                <input id="first-name" type="text"/>
+            </div>
+            <div class="form-input">
+                <label for="last-name">Last Name:</label>
+                <input id="last-name" type="text"/>
+            </div>
+            <div class="form-input">
+                <label for="birthday">Birthday:</label>
+                <input id="birthday" type="date"/>
+            </div>
+            <div class="form-input">
+                <label for="height">Height:</label>
+                <input id="height" type="number"/>
+            </div>
+            <div class="form-input">
+                <label for="weight">Weight:</label>
+                <input id="weight" type="number"/>
+            </div>
+        </section>
+
+        <section id="billing-info" class="form-section">
+            <h2 class="flex bold white-text">Billing Information</h2>
+            <div class="form-input top-input">
+                <label for="credit">Credit Card Number:</label>
+                <input id="credit" type="number"/>
+            </div>
+            <div class="form-input">
+                <label for="name-on-card">Name on Card:</label>
+                <input id="name-on-card" type="text"/>
+            </div>
+            <div class="form-input">
+                <label for="experation">Experation Date:</label>
+                <input id="experation" type="date"/>
+            </div>
+            <div class="form-input">
+                <label for="cvc">CVC Code (on back):</label>
+                <input id="cvc" type="number"/>
+            </div>
+            <div class="form-input">
+                <label for="zip">Zip Code:</label>
+                <input id="zip" type="number"/>
+            </div>
+        </section>
+
+        <section id="shipping-info" class="form-section">
+            <h2 class="flex bold white-text">Shipping Information</h2>
+            <div class="form-input top-input">
+                <label for="address">Street Address:</label>
+                <input id="address" type="text"/>
+            </div>
+            <div class="form-input">
+                <label for="city">City:</label>
+                <input id="city" type="text"/>
+            </div>
+            <div class="form-input">
+                <label for="state">State:</label>
+                <input id="state" type="text"/>
+            </div>
+            <div class="form-input">
+                <label for="zip-ship">Zip Code:</label>
+                <input id="zip-ship" type="number"/>
+            </div>
+        </section>
+
+        <section id="preferences" class="form-section">
+            <h2 class="flex bold white-text">Preferences</h2>
+            <div class="form-input top-input">
+                <p>Do you prefer morning or afternoon deliveries?</p>
+                <label for="delivery-morning">Morning:</label>
+                <input id="delivery-morning" type="radio" name="delivery"/>
+                <label for="delivery-afternoon">Afternoon:</label>
+                <input id="delivery-afternoon" type="radio" name="delivery"/>
+            </div>
+            <div class="form-input top-input">
+                <p>Do you prefer cats or dogs?</p>
+                <label for="cats">Cats:</label>
+                <input id="cats" type="radio" name="pets"/>
+                <label for="dogs">Dogs:</label>
+                <input id="dogs" type="radio" name="pets"/>
+            </div>
+            <div class="form-input top-input">
+                <p>Do you prefer the beach or the mountains?</p>
+                <label for="beach">Beach:</label>
+                <input id="beach" type="radio" name="outdoors"/>
+                <label for="mountains">Mountains:</label>
+                <input id="mountains" type="radio" name="outdoors"/>
+            </div>
+            <div class="form-input top-input">
+                <p>Do you prefer foods that are sweet or salty?</p>
+                <label for="sweet">Sweet:</label>
+                <input id="sweet" type="radio" name="food"/>
+                <label for="salty">Salty:</label>
+                <input id="salty" type="radio" name="food"/>
+            </div>
+        </section>
+
+        <button id="reg">Register</button>
+    </main>
+
+    <div id="back-to-top" class="flex bold">
+        <a href="#top" class="bold triangle">&#9652;</a>
+    </div>
+
+    <footer class="flex">
+        <section>
+            <h3 class="bold">Lemon Drop</h3>
+        </section>
+
+        <section class="footer-links flex">
+            <h4>Links</h4>
+            <nav class="flex bottom-nav">
+                <a href="../1-one/one.html">One</a>
+                <a href="../2-two/two.html">Two</a>
+                <a href="../3-three/three.html">Three</a>
+            </nav>
+        </section>
+    </footer>
+</body>
+</html>

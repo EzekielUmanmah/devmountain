@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Tourney&display=swap');
+
+body {
+    background-color: black;
+    text-align: center;
+}
+
+p {
+    font-size: 40px;
+}
+
+.lobster {
+    font-family: 'Lobster', cursive;
+    color: red;
+}
+
+.loop {
+    font-family: 'Zen Loop', cursive;
+    color: blue;
+}
+
+.special-elite {
+    font-family: 'Special Elite', cursive;
+    color: green;
+}
+
+.tourney {
+    font-family: 'Tourney', cursive;
+    color: yellow;
+}
