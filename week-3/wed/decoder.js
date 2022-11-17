@@ -7,12 +7,27 @@
 // find the ‘e’, skip 5, find the ‘y’.
 // So, if we passed ‘0h2xce5ngbrdy’ into your function, we should get ‘hey’ as a result.
 
+// function decoder(code) {
+//   let str = '';
+
+//   for (let i = 0; i < code.length; i++) {
+//     if (!isNaN(code[i])) {
+//       str += code[i + parseInt(code[i]) + 1];
+//     }
+//   }
+//   console.log(str);
+//   return str;
+// }
+
+// Optimized solution after looking at solution
 function decoder(code) {
   let str = '';
 
   for (let i = 0; i < code.length; i++) {
     if (!isNaN(code[i])) {
       str += code[i + parseInt(code[i]) + 1];
+      // change i so that it only iterates on numbers
+      i += parseInt(code[i]) + 1;
     }
   }
   console.log(str);
