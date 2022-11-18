@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <ol>
+        <li class="crumb"><a href="./home.html">Home</a></li>
+        <li class="crumb"><a href="./profile.html">Profile</a></li>
+        <li class="crumb"><a href="./about.html">About</a></li>
+      </ol>
+    </nav>
+
+    <content>
+      <h1>Hello World</h1>
+      <!-- insert hello world here -->
+
+      <img src="./duck.png" alt="duck" />
+
+      <p>Hello there and welcome to this website</p>
+      <ul>
+        <li>You have strong hands!</li>
+        <li>You are smart!</li>
+        <li>You have such a way with words!</li>
+      </ul>
+      <h2>Contact Us</h2>
+      <form id="contact">
+        Your name:
+        <input type="text" />
+        <br />
+        How did you hear about us:
+        <br />
+        <input
+          type="checkbox"
+          id="google"
+          name="google"
+          style="display: inline-block"
+        />
+        <label for="google">Google</label>
+        <br />
+        <input
+          type="checkbox"
+          id="friend"
+          name="friend"
+          style="display: inline-block"
+        />
+        <label for="friend">Friend</label>
+        <br />
+        <input
+          type="checkbox"
+          id="Other"
+          name="Other"
+          style="display: inline-block"
+        />
+        <label for="Other">Other</label><br />
+
+        <br />
+        <div>
+          Message:
+          <input type="textarea" />
+
+          <input type="submit" />
+        </div>
+      </form>
+    </content>
+
+    <script src="about.js"></script>
+  </body>
+</html>
