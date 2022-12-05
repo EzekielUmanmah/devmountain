@@ -1,3 +1,15 @@
+const fortunes = [
+  'A beautiful, smart, and loving person will be coming into your life.',
+  'A dubious friend may be an enemy in camouflage.',
+  'A faithful friend is a strong defense.',
+  'A feather in the hand is better than a bird in the air.',
+  'A fresh start will put you on your way.',
+  'A friend asks only for your time not your money.',
+  'A friend is a present you give yourself.',
+  'A gambler not only will lose what he has, but also will lose what he doesn’t have.',
+  'A golden egg of opportunity falls into your lap this month.',
+];
+
 let answers = [
   'Magic 8 ball answers: Outlook not so good.',
   'Magic 8 ball answers: Very doubtful.',
@@ -17,6 +29,22 @@ const pikachu = [
   'Looking for the appropriate detective. I am your best chance to find out your pops.',
 ];
 
+const inspire = [
+  '“All our dreams can come true, if we have the courage to pursue them.” —Walt Disney',
+  '“The secret of getting ahead is getting started.” —Mark Twain',
+  '“I’ve missed more than 9,000 shots in my career. I’ve lost almost 300 games. 26 times I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life, and that is why I succeed.” —Michael Jordan',
+  '“Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.” —Mary Kay Ash',
+  '“The best time to plant a tree was 20 years ago. The second best time is now.” ―Chinese Proverb',
+];
+
+const help = [
+  'Always have a willing hand to help someone, you might be the only one that does. ROY T. BENNETT',
+  'Great opportunities to help others seldom come, but small ones surround us every day. SALLY KOCH',
+  'Selfless giving is the art of living. FREDERIC LENZ',
+  'The best way to find yourself is to lose yourself in the service of others. MAHATMA GANDHI',
+  'Service to others is the rent you pay for your room here on earth. MOHAMMAD ALI',
+];
+
 module.exports = {
   getCompliment: (req, res) => {
     const compliments = [
@@ -33,17 +61,6 @@ module.exports = {
   },
 
   getFortune: (req, res) => {
-    const fortunes = [
-      'A beautiful, smart, and loving person will be coming into your life.',
-      'A dubious friend may be an enemy in camouflage.',
-      'A faithful friend is a strong defense.',
-      'A feather in the hand is better than a bird in the air.',
-      'A fresh start will put you on your way.',
-      'A friend asks only for your time not your money.',
-      'A friend is a present you give yourself.',
-      'A gambler not only will lose what he has, but also will lose what he doesn’t have.',
-      'A golden egg of opportunity falls into your lap this month.',
-    ];
     const i = Math.floor(Math.random() * fortunes.length);
 
     res.status(200).send(fortunes[i]);
@@ -81,5 +98,19 @@ module.exports = {
   getPikachuQuote: (req, res) => {
     const i = Math.floor(Math.random() * pikachu.length);
     res.status(200).send(pikachu[i]);
+  },
+
+  getChooseQuote: (req, res) => {
+    const { choice } = req.params;
+
+    if (choice === '0') {
+      const i = Math.floor(Math.random() * inspire.length);
+      res.status(200).send(inspire[i]);
+    }
+
+    if (choice === '1') {
+      const i = Math.floor(Math.random() * help.length);
+      res.status(200).send(help[i]);
+    }
   },
 };

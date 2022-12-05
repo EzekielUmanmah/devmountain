@@ -16,6 +16,7 @@ const {
   updateAnswer,
   getBallMsgs,
   getPikachuQuote,
+  getChooseQuote,
 } = require('./controller');
 
 app.get('/api/compliment', getCompliment);
@@ -28,5 +29,7 @@ app.delete('/api/ball/:id', deleteAnswer);
 app.put('/api/ball/:id', updateAnswer);
 
 app.get('/api/pikachu', getPikachuQuote);
+
+app.get('/api/choose/:choice', getChooseQuote);
 
 app.listen(4000, () => console.log('Server running on 4000'));

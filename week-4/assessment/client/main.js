@@ -108,3 +108,13 @@ pikachu.addEventListener('mouseover', getQuote);
 function getQuote() {
   axios.get(`${baseURL}/pikachu`).then((data) => alert(data.data));
 }
+
+const form = document.getElementById('choose');
+form.addEventListener('submit', handleSubmit);
+
+function handleSubmit(e) {
+  e.preventDefault();
+  const option = document.getElementById('option').value;
+
+  axios.get(`${baseURL}/choose/${option}`).then((data) => alert(data.data));
+}

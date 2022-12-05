@@ -20,9 +20,23 @@
       </form>
     </div>
     <section id="answerslist"></section>
-    <div>
-      <h1>HOVER ON PIKACHU AND SEE WHAT HE HAS TO SAY!</h1>
-      <img src="./Pikachu.webp" alt="pikachu" style="width: 200px" />
+    <div style="display: flex">
+      <div style="width: 50%">
+        <h1>HOVER ON PIKACHU AND SEE WHAT HE HAS TO SAY!</h1>
+        <img src="./Pikachu.webp" alt="pikachu" style="width: 200px" />
+      </div>
+
+      <div>
+        <h1>GET INSPIRED, ENCOURAGED, OR HELP!</h1>
+        <form id="choose">
+          <select name="" id="option">
+            <option value="0">Inspiration</option>
+            <option value="1">Help</option>
+          </select>
+          <input type="submit" value="Submit" />
+        </form>
+        <br /><br />
+      </div>
     </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
