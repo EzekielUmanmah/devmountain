@@ -28,7 +28,8 @@ module.exports = {
       .query(
         `
          select city.city_id, city.name city, city.rating, country.country_id, country.name country 
-         from cities city join countries country on city.country_id = country.country_id;
+         from cities city join countries country on city.country_id = country.country_id
+         order by rating desc;
         `
       )
       .then((dbRes) => res.status(200).send(dbRes[0]))
@@ -272,6 +273,11 @@ module.exports = {
             ('Yemen'),
             ('Zambia'),
             ('Zimbabwe');
+
+            insert into cities (name, rating, country_id)
+            values ('Paris', 3, 61),
+            ('Sydney', 5, 9),
+            ('Kabul', 2, 1);
         `
       )
       .then(() => {
