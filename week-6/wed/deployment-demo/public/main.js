@@ -1,5 +1,7 @@
-const btn = document.querySelector('button')
+const btn = document.querySelector('button');
 
-const clickHandler = () => alert('The cat name is: Rascal')
+const clickHandler = () => alert('The cat name is: Rascal');
 
-btn.addEventListener('click', clickHandler)
+btn.addEventListener('click', clickHandler);
+
+console.log(firebase);

@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cats!Cats!Cats!</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Cats! Cats! Cats!</h1>
+      <h1>Cats! Cats! Cats!</h1>
     </header>
 
     <button>Get a cat name</button>
-    
-    <script src="main.js"></script>
-</body>
-</html>
+  </body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js';
+    import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js';
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
 
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: 'AIzaSyA_mksgWGVg6pt5NbuYntZjdWwc_xZNEIk',
+      authDomain: 'deployment-demo-cb088.firebaseapp.com',
+      projectId: 'deployment-demo-cb088',
+      storageBucket: 'deployment-demo-cb088.appspot.com',
+      messagingSenderId: '978682502391',
+      appId: '1:978682502391:web:7ca7e6b5cfb114292ac7f2',
+      measurementId: 'G-4WXMJER93K',
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  <script src="main.js"></script>
+</html>
