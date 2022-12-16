@@ -41,20 +41,19 @@ app.get('/api/students/fail', (req, res) => {
 app.post('/api/students', (req, res) => {
   let { name } = req.body;
 
-  const index = students.findIndex((student) => {
-    return student === name;
-  });
-
   try {
+    const index = students.findIndex((student) => {
+      return student === name;
+    });
     if (index === -1 && name !== '') {
       students.push(name);
       rollbar.info('Great! You added a student!');
       res.status(200).send(students);
     } else if (name === '') {
-      rollbar.error('Someone entered a blank student!');
+      rollbar.warning('Someone entered a blank student!');
       res.status(400).send('You must enter a name.');
     } else {
-      rollbar.error('Student already exists!');
+      rollbar.critical('Student already exists!');
       res.status(400).send('That student already exists.');
     }
   } catch (err) {
