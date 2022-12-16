@@ -1,9 +1,6 @@
 {
-    "compilerOptions": {
-      "esModuleInterop": true
-    },
-    "files": [
-        "functions.test.ts",
-        "duelDuo.test.ts"
-    ]
+  "compilerOptions": {
+    "esModuleInterop": true
+  },
+  "files": ["functions.test.ts", "duelDuo.test.ts"]
 }
