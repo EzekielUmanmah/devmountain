@@ -1,0 +1,28 @@
+                                                          push | unshift
+const tinyArray = getSizedArray(10);                  157.5 μs | 64.5 μs
+const smallArray = getSizedArray(100);                174.2 μs | 82.3 μs
+const mediumArray = getSizedArray(1000);              240.8 μs | 319.8 μs
+const largeArray = getSizedArray(10000);              938.8 μs | 15.4933 ms
+const extraLargeArray = getSizedArray(100000);        4.779 ms | 1.8638976 s
+
+Read over the results, and write a paragraph that explains the pattern you see. 
+How does each function “scale”? Which of the two functions scales better? 
+How can you tell?
+
+The push or append function has a time complexity of O(1). Pushing items to an array 
+does not require iterating over each item but simply finding the end of the array and
+inserting the value. This means as the size of the input increases, the operation will
+take the same time or constant time.
+
+The unshift or insert function has a linear or O(n) complexity which means that as the 
+size of the input increases, the number of operations required also increase proportionally.
+It is a one-to-one relationship so adding one more input increases operations by one.
+Every call to unshift() requires the function to look through the array and find the 
+beginning, insert the new value, and finally reindex or move the existing values.
+
+O(1) scales a lot better than O(n) as we can see from the results of the function calls.
+As the size of the array increases, the push method with O(1) complexity hardly changes
+even for very large array lengths. O(n) scales worse in comparison as the size of the 
+array increases.
+
+**It's interesting to note unshift is faster for arr.length < 100.
