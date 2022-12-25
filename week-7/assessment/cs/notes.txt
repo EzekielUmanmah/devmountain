@@ -12,11 +12,10 @@ How can you tell?
 The push or append function has a time complexity of O(1). Pushing items to an array 
 does not require iterating over each item but simply finding the end of the array and
 inserting the value. This means as the size of the input increases, the operation will
-take the same time or constant time.
+take the same or constant time.
 
 The unshift or insert function has a linear or O(n) complexity which means that as the 
 size of the input increases, the number of operations required also increase proportionally.
-It is a one-to-one relationship so adding one more input increases operations by one.
 Every call to unshift() requires the function to look through the array and find the 
 beginning, insert the new value, and finally reindex or move the existing values.
 
@@ -24,5 +23,3 @@ O(1) scales a lot better than O(n) as we can see from the results of the functio
 As the size of the array increases, the push method with O(1) complexity hardly changes
 even for very large array lengths. O(n) scales worse in comparison as the size of the 
 array increases.
-
-**It's interesting to note unshift is faster for arr.length < 100.
